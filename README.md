@@ -5,4 +5,4 @@
 
 ## Star History
 
-[![Star History Chart](E:\programData\github\seed-lib\README.assets\seed-lib&type=date&legend=top-left.svg+xml)](https://www.star-history.com/#seed-lib/seed-lib&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=seed-lib/seed-lib&type=date&legend=top-left)](https://www.star-history.com/#seed-lib/seed-lib&type=date&legend=top-left)
