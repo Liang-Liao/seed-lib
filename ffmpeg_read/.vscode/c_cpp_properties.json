@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "MSYS2 MinGW x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:\\Environments\\msys64\\mingw64\\include"
+            ],
+            "defines": [
+            ],
+            "compilerPath": "D:\\Environments\\msys64\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

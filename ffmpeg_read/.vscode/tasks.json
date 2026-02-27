@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译FFmpeg源码",
+            "type": "shell",
+            "command": "D:\\Environments\\msys64\\usr\\bin\\make.exe",
+            "args": [
+                "-j8",
+                "-C", "${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PATH": "D:\\Environments\\msys64\\mingw64\\bin\\;D:\\Environments\\msys64\\usr\\bin;${env:PATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "重新编译FFmpeg调试版源码"
+        },
+        {
+            "label": "编译单个测试程序",
+            "type": "shell",
+            "command": "D:\\Environments\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-O0",
+                "-o",
+                "${fileBasenameNoExtension}.exe",
+                "${fileBasenameNoExtension}.c"
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+                "env": {
+                    "PATH": "D:\\Environments\\msys64\\mingw64\\bin\\;D:\\Environments\\msys64\\usr\\bin;${env:PATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "重新编译FFmpeg调试版源码"
+        }
+    ]
+}

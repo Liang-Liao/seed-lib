@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试FFmpeg源码",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ffmpeg.exe",
+            "args": [
+                "-i", "E:\\programData\\source_read\\test_file\\01.mp4",
+                "-c:v", "h264",
+                "E:\\programData\\source_read\\test_file\\output.mp4"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "D:\\Environments\\msys64\\mingw64\\bin;E:\\programData\\source_read\\ffmpeg-8.0.1;${env:PATH}"
+                }
+            ],
+            "externalConsole": true,
+            "miDebuggerPath": "D:\\Environments\\msys64\\mingw64\\bin\\gdb.exe",
+            "preLaunchTask": "编译FFmpeg源码",
+            "sourceFileMap": {
+                "/e/programData/source_read/ffmpeg-8.0.1/**": "${workspaceFolder}/**"
+            }
+        },
+        {
+            "name": "调试FFmpeg测试程序",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "D:\\Environments\\msys64\\mingw64\\bin;E:\\programData\\source_read\\ffmpeg-8.0.1;${env:PATH}"
+                }
+            ],
+            "externalConsole": true,
+            "miDebuggerPath": "D:\\Environments\\msys64\\mingw64\\bin\\gdb.exe",
+            "preLaunchTask": "编译单个测试程序",
+            "sourceFileMap": {
+                "/e/programData/source_read/ffmpeg-8.0.1/**": "${workspaceFolder}/**"
+            }
+        }
+    ]
+}
