@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [100],
+  "files.exclude": {
+    ".reasonix/memories/": true,
+    "**/.gitkeep": true
+  },
+  "search.exclude": {
+    ".reasonix/memories/": true
+  },
+  "files.associations": {
+    "*.md": "markdown",
+    "MEMORY.md": "markdown"
+  }
+}

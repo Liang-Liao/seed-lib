@@ -1,0 +1,47 @@
+# --- Reasonix (Agent) ---
+.reasonix/memories/
+
+# 但保留 skills/ 下的示例（可提交）
+.reasonix/skills/
+!.reasonix/skills/example-*
+
+# --- 环境变量 ---
+.env
+.env.local
+.env.*.local
+
+# --- 操作系统 ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.idea/
+*.swp
+*.swo
+*~
+
+# --- 依赖目录 (按语言预留) ---
+node_modules/
+.pnp
+.pnp.js
+vendor/
+bundle/
+
+# --- 构建输出 ---
+dist/
+build/
+*.tsbuildinfo
+out/
+*.egg-info/
+__pycache__/
+*.pyc
+.target/
+
+# --- 测试覆盖率 ---
+coverage/
+.coverage
+.nyc_output/
+
+# --- 其他 ---
+*.log
+.DS_Store
